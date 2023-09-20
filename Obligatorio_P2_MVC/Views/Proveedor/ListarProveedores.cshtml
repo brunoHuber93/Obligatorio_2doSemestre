@@ -1,0 +1,56 @@
+﻿@model IEnumerable<Obligatorio_P2_MVC.Models.ProveedorViewModel>
+
+@{
+    ViewData["Title"] = "ListarProveedores";
+}
+
+<h1>Lista de proveedores</h1>
+
+
+<table class="table">
+    <h3 class="alert-danger">@ViewBag.Error</h3>
+    <thead>
+        <tr>
+            
+            <th>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Telefono)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Direccion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Descuento)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+              
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Telefono)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Direccion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descuento)
+            </td>
+            <td>
+                    @Html.ActionLink("Aplicar descuento", "AplicarDescuento", "Proveedor", new {Nombre=item.Nombre})
+                
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+<p>
+    <a asp-action="Index" asp-controller="Operador">Volver a menú</a>
+</p>

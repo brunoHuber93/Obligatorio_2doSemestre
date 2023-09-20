@@ -1,0 +1,92 @@
+﻿@model IEnumerable<Obligatorio_P2_MVC.Models.AgendaViewModel>
+
+@{
+    ViewData["Title"] = "ListarAgendaPorFecha";
+}
+
+<h1>Listar agendas por fecha</h1>
+<h3 class="alert-danger">@ViewBag.Error</h3>
+
+<form method="post" action="/Operador/ListarAgendaPorFecha" class="m-lg-auto">
+    <label for="fecha">Fecha:</label>
+    <input type="date" id="fecha" name="fecha" required>
+    <button type="submit" class="btn-primary">Buscar</button>
+</form>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Apellido)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Actividad)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FechaActividad)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Lugar)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CostoActividad)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Estado)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Proveedor)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Id)
+                </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Apellido)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Actividad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaActividad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Lugar)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CostoActividad)
+            </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Estado)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Proveedor)
+                </td>
+                
+
+        </tr>
+}
+    </tbody>
+</table>
+            <div class="d-inline-flex gap-4" >
+                <p>
+                    <a asp-action="Index" asp-controller="Operador">Volver a menú</a>
+                </p>    
+
+                <p>
+                    <a asp-action="ListarAgendaPorFecha" asp-controller="Operador">Volver a lista</a>
+                </p>
+            </div>

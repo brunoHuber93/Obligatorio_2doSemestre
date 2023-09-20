@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Huéspedes</h1>
+
+<div class="class = "btn btn-primary"">
+    <a href="@Url.Action("ListarActividadesPorFecha", "Actividad")" class="btn btn-primary">Listar actividades por fecha</a>
+    @Html.ActionLink("Listar Datos Huesped", "ListarDatosHuesped", "Huesped", new {email = Context.Session.GetString("email")}, new { @class = "btn btn-primary" })
+    @Html.ActionLink("Listar agendas", "ListarAgendasDelHuesped", "Huesped", new {email = Context.Session.GetString("email")}, new { @class = "btn btn-primary" })  
+
+</div>
+
+

@@ -1,0 +1,112 @@
+﻿@model IEnumerable<Obligatorio_P2_MVC.Models.AgendaViewModel>
+@using Obligatorio_P2_MVC.Models
+@using ObligatorioP2_C_
+
+@{
+    ViewData["Title"] = "Listar Agendas huésped";
+}
+
+<h1>ListarAgendaHuesped</h1>
+<h3 class="alert-danger">@ViewBag.Error</h3>
+
+<form method="post" action="/Operador/ListarAgendaHuesped">
+    <div>
+        <input type="radio" id="option1" name="tipoDocumento" value="@TipoDocumento.CI" required>
+        <label for="option1">CI</label>
+    </div>
+    <div>
+        <input type="radio" id="option2" name="tipoDocumento" value="@TipoDocumento.PASAPORTE" required>
+        <label for="option2">PASAPORTE</label>
+    </div>
+    <div>
+        <input type="radio" id="option3" name="tipoDocumento" value="@TipoDocumento.OTROS" required>
+        <label for="option3">OTROS</label>
+    </div>
+    <div>
+        <label for="textInput">Número Documento:</label>
+        <input type="text" id="textInput" name="numeroDocumento" required>
+    </div>
+    <div>
+        <input type="submit" value="Búscar">
+    </div>
+</form>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Apellido)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Actividad)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FechaActividad)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Lugar)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CostoActividad)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Estado)
+            </th>
+            
+            <th>
+                @Html.DisplayNameFor(model => model.Proveedor)
+            </th>
+           <th>
+                @Html.DisplayNameFor(model => model.TipoDocumento)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Apellido)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Actividad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaActividad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Lugar)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CostoActividad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Estado)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Proveedor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TipoDocumento)
+            </td>
+           
+        </tr>
+}
+
+    </tbody>
+</table>
+        <p>
+            <a asp-action="Index" asp-controller="Operador" class="btn-toolbar">Volver</a>
+        </p>

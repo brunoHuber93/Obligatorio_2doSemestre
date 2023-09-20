@@ -1,0 +1,44 @@
+﻿@model Obligatorio_P2_MVC.Models.LoginViewModel
+
+@{
+    ViewData["Title"] = "Login";
+}
+
+
+<h1>Login</h1>
+<div class="card-header-tabs">
+   
+</div>
+
+<h4 class="alert-danger">@ViewBag.Error</h4>
+<hr />
+<div class="d-flex" >
+    <div class="col-md-4">
+        <form asp-action="Login">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Contraseña" class="control-label"></label>
+                <input asp-for="Contraseña" type="password" class="form-control" />
+                <span asp-validation-for="Contraseña" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Iniciar Sesión" class="btn btn-primary" />
+            </div>
+        </form>
+        <div class="m-1 mx-lg-0">
+            <a href="@Url.Action("RegistroHuesped", "Huesped")" class="btn btn-primary">Registrar huésped</a>
+        </div>
+    </div>
+</div>
+
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

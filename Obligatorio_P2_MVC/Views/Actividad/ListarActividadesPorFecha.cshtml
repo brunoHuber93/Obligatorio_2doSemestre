@@ -1,0 +1,80 @@
+﻿@model IEnumerable<Obligatorio_P2_MVC.Models.ActividadViewModel>
+
+@{
+    ViewData["Title"] = "ListarActividadesPorFecha";
+}
+
+<h1>Actividades por fecha</h1>
+<form method="post" action="/Actividad/ListarActividadesPorFecha" class="m-lg-auto">
+    <label for="fecha">Fecha:</label>
+    <input type="date" id="fecha" name="fecha" required>
+    <button type="submit" class="btn-primary">Buscar</button>
+</form>
+
+    <h3 class="alert-danger">@ViewBag.Error</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Descripcion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Fecha)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CupoMaximo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EdadMinima)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CostoActividad)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+       
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Id)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Nombre)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Descripcion)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Fecha)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CupoMaximo)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.EdadMinima)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CostoActividad)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Agendar", "Agendar", "Agenda", new {IdActividad =item.Id})
+                    </td>
+                </tr>
+            }
+        
+        
+
+     
+            
+    </tbody>
+</table>
+                 @Html.ActionLink("Volver", "Index", "Agenda")

@@ -1,0 +1,91 @@
+﻿@model IEnumerable<Obligatorio_P2_MVC.Models.AgendaViewModel>
+@using Obligatorio_P2_MVC.Models
+@using ObligatorioP2_C_
+
+@{
+    ViewData["Title"] = "ListarAgendasPendientesPago";
+}
+
+<h1>Listar agendas pendientes de pago</h1>
+<h3 class="alert-danger">@ViewBag.Error</h3>
+
+<h3 class="alert-danger">@ViewBag.Error</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Apellido)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Actividad)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FechaActividad)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Lugar)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CostoActividad)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Estado)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Proveedor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TipoDocumento)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Apellido)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Actividad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaActividad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Lugar)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CostoActividad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Estado)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Proveedor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TipoDocumento)
+            </td>
+                <td>
+                    @Html.ActionLink("Confirmar Agenda", "ConfirmarAgenda", "Operador", new {IdAgenda =item.Id})
+                </td>
+        </tr>
+}
+    </tbody>
+</table>
+        <p>
+            <a asp-action="Index" asp-controller="Operador">Volver menú</a>
+        </p>

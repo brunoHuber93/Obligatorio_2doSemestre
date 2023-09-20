@@ -1,0 +1,61 @@
+﻿@model IEnumerable<Obligatorio_P2_MVC.Models.AgendaViewModel>
+
+@{
+    ViewData["Title"] = "ListarAgendasDelHuesped";
+}
+
+<h1>Listar agendas de huésped</h1>
+
+<table class="table">
+<h3 class="alert-danger">@ViewBag.Error</h3>
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Apellido)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Actividad)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FechaActividad)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Lugar)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CostoActividad)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Apellido)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Actividad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaActividad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Lugar)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CostoActividad)
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+                <p>
+                    <a asp-action="Index" asp-controller="Huesped">Volver</a>
+                </p>

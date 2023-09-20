@@ -1,0 +1,41 @@
+﻿@model Obligatorio_P2_MVC.Models.ProveedorDescuentoViewModel
+
+@{
+    ViewData["Title"] = "AplicarDescuento";
+}
+
+<h1>Aplicar descuento</h1>
+
+<h4>ProveedorViewModel</h4>
+<hr />
+<div class="row">
+    <h3 class="alert-danger">@ViewBag.Error</h3>
+    <div class="col-md-4">
+        <form asp-action="AplicarDescuento">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Nombre" class="control-label" readonly></label>
+                <input asp-for="Nombre" class="form-control" readonly />
+                <span asp-validation-for="Nombre" class="text-danger"></span>
+            </div>
+           
+            <div class="form-group">
+                <label asp-for="Descuento" class="control-label"></label>
+                <input asp-for="Descuento" class="form-control" />
+                <span asp-validation-for="Descuento" class="text-danger"></span>
+            </div>
+            <input asp-for="Nombre" type="hidden" value="@ViewBag.provNombre" />
+            <div class="form-group">
+                <input type="submit" value="Asignar descuento" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Volver a lista</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

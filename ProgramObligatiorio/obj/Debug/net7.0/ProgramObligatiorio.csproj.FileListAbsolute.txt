@@ -1,0 +1,36 @@
+C:\Users\Bruno\OneDrive\Escritorio\ObligatorioP2\ProgramObligatiorio\bin\Debug\net7.0\ProgramObligatiorio.exe
+C:\Users\Bruno\OneDrive\Escritorio\ObligatorioP2\ProgramObligatiorio\bin\Debug\net7.0\ProgramObligatiorio.deps.json
+C:\Users\Bruno\OneDrive\Escritorio\ObligatorioP2\ProgramObligatiorio\bin\Debug\net7.0\ProgramObligatiorio.runtimeconfig.json
+C:\Users\Bruno\OneDrive\Escritorio\ObligatorioP2\ProgramObligatiorio\bin\Debug\net7.0\ProgramObligatiorio.dll
+C:\Users\Bruno\OneDrive\Escritorio\ObligatorioP2\ProgramObligatiorio\bin\Debug\net7.0\ProgramObligatiorio.pdb
+C:\Users\Bruno\OneDrive\Escritorio\ObligatorioP2\ProgramObligatiorio\obj\Debug\net7.0\ProgramObligatiorio.csproj.AssemblyReference.cache
+C:\Users\Bruno\OneDrive\Escritorio\ObligatorioP2\ProgramObligatiorio\obj\Debug\net7.0\ProgramObligatiorio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Bruno\OneDrive\Escritorio\ObligatorioP2\ProgramObligatiorio\obj\Debug\net7.0\ProgramObligatiorio.AssemblyInfoInputs.cache
+C:\Users\Bruno\OneDrive\Escritorio\ObligatorioP2\ProgramObligatiorio\obj\Debug\net7.0\ProgramObligatiorio.AssemblyInfo.cs
+C:\Users\Bruno\OneDrive\Escritorio\ObligatorioP2\ProgramObligatiorio\obj\Debug\net7.0\ProgramObligatiorio.csproj.CoreCompileInputs.cache
+C:\Users\Bruno\OneDrive\Escritorio\ObligatorioP2\ProgramObligatiorio\obj\Debug\net7.0\ProgramObligatiorio.dll
+C:\Users\Bruno\OneDrive\Escritorio\ObligatorioP2\ProgramObligatiorio\obj\Debug\net7.0\refint\ProgramObligatiorio.dll
+C:\Users\Bruno\OneDrive\Escritorio\ObligatorioP2\ProgramObligatiorio\obj\Debug\net7.0\ProgramObligatiorio.pdb
+C:\Users\Bruno\OneDrive\Escritorio\ObligatorioP2\ProgramObligatiorio\obj\Debug\net7.0\ProgramObligatiorio.genruntimeconfig.cache
+C:\Users\Bruno\OneDrive\Escritorio\ObligatorioP2\ProgramObligatiorio\obj\Debug\net7.0\ref\ProgramObligatiorio.dll
+C:\Users\Bruno\OneDrive\Escritorio\ObligatorioP2\ProgramObligatiorio\bin\Debug\net7.0\ClasesObligatorio.dll
+C:\Users\Bruno\OneDrive\Escritorio\ObligatorioP2\ProgramObligatiorio\bin\Debug\net7.0\ClasesObligatorio.pdb
+C:\Users\Bruno\OneDrive\Escritorio\ObligatorioP2\ProgramObligatiorio\obj\Debug\net7.0\ProgramObligatiorio.csproj.CopyComplete
+C:\Users\Bruno\OneDrive\Escritorio\ORT\2do semestre\Programacion 2\ObligatorioP2\ProgramObligatiorio\bin\Debug\net7.0\ProgramObligatiorio.exe
+C:\Users\Bruno\OneDrive\Escritorio\ORT\2do semestre\Programacion 2\ObligatorioP2\ProgramObligatiorio\bin\Debug\net7.0\ProgramObligatiorio.deps.json
+C:\Users\Bruno\OneDrive\Escritorio\ORT\2do semestre\Programacion 2\ObligatorioP2\ProgramObligatiorio\bin\Debug\net7.0\ProgramObligatiorio.runtimeconfig.json
+C:\Users\Bruno\OneDrive\Escritorio\ORT\2do semestre\Programacion 2\ObligatorioP2\ProgramObligatiorio\bin\Debug\net7.0\ProgramObligatiorio.dll
+C:\Users\Bruno\OneDrive\Escritorio\ORT\2do semestre\Programacion 2\ObligatorioP2\ProgramObligatiorio\bin\Debug\net7.0\ProgramObligatiorio.pdb
+C:\Users\Bruno\OneDrive\Escritorio\ORT\2do semestre\Programacion 2\ObligatorioP2\ProgramObligatiorio\bin\Debug\net7.0\ClasesObligatorio.dll
+C:\Users\Bruno\OneDrive\Escritorio\ORT\2do semestre\Programacion 2\ObligatorioP2\ProgramObligatiorio\bin\Debug\net7.0\ClasesObligatorio.pdb
+C:\Users\Bruno\OneDrive\Escritorio\ORT\2do semestre\Programacion 2\ObligatorioP2\ProgramObligatiorio\obj\Debug\net7.0\ProgramObligatiorio.csproj.AssemblyReference.cache
+C:\Users\Bruno\OneDrive\Escritorio\ORT\2do semestre\Programacion 2\ObligatorioP2\ProgramObligatiorio\obj\Debug\net7.0\ProgramObligatiorio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Bruno\OneDrive\Escritorio\ORT\2do semestre\Programacion 2\ObligatorioP2\ProgramObligatiorio\obj\Debug\net7.0\ProgramObligatiorio.AssemblyInfoInputs.cache
+C:\Users\Bruno\OneDrive\Escritorio\ORT\2do semestre\Programacion 2\ObligatorioP2\ProgramObligatiorio\obj\Debug\net7.0\ProgramObligatiorio.AssemblyInfo.cs
+C:\Users\Bruno\OneDrive\Escritorio\ORT\2do semestre\Programacion 2\ObligatorioP2\ProgramObligatiorio\obj\Debug\net7.0\ProgramObligatiorio.csproj.CoreCompileInputs.cache
+C:\Users\Bruno\OneDrive\Escritorio\ORT\2do semestre\Programacion 2\ObligatorioP2\ProgramObligatiorio\obj\Debug\net7.0\ProgramObligatiorio.csproj.CopyComplete
+C:\Users\Bruno\OneDrive\Escritorio\ORT\2do semestre\Programacion 2\ObligatorioP2\ProgramObligatiorio\obj\Debug\net7.0\ProgramObligatiorio.dll
+C:\Users\Bruno\OneDrive\Escritorio\ORT\2do semestre\Programacion 2\ObligatorioP2\ProgramObligatiorio\obj\Debug\net7.0\refint\ProgramObligatiorio.dll
+C:\Users\Bruno\OneDrive\Escritorio\ORT\2do semestre\Programacion 2\ObligatorioP2\ProgramObligatiorio\obj\Debug\net7.0\ProgramObligatiorio.pdb
+C:\Users\Bruno\OneDrive\Escritorio\ORT\2do semestre\Programacion 2\ObligatorioP2\ProgramObligatiorio\obj\Debug\net7.0\ProgramObligatiorio.genruntimeconfig.cache
+C:\Users\Bruno\OneDrive\Escritorio\ORT\2do semestre\Programacion 2\ObligatorioP2\ProgramObligatiorio\obj\Debug\net7.0\ref\ProgramObligatiorio.dll

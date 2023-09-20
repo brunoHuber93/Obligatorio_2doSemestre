@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Menú Operador</h1>
+<div class="d-flex gap-3 ">
+    @Html.ActionLink("Listado de actividades", "ListarActividadesPorFecha", "Actividad", new {email = Context.Session.GetString("email")}, new { @class = "btn btn-primary" })
+
+
+<a href="@Url.Action("ListarProveedores", "Proveedor")" class="btn btn-primary">Listado de proveedores</a>
+
+
+@Html.ActionLink("Listar datos Operador", "ListarDatosOperador", "Operador", new {email = Context.Session.GetString("email")}, new { @class = "btn btn-primary" })
+
+
+<a href="@Url.Action("ListarAgendaPorFecha", "Operador")" class="btn btn-primary">Listar agendas</a>
+
+
+<a href="@Url.Action("ListarAgendaHuesped", "Operador")" class="btn btn-primary">Listar agendas de huésped</a>
+
+
+<a href="@Url.Action("ListarAgendasPendientesPago", "Operador")" class="btn btn-primary">Listar agendas pendientes de pago</a>
+
+</div>
+
+
+    
+    
+    
+   
+    
+    
+
+
+
+
+
+
